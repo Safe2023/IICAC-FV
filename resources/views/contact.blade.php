@@ -38,7 +38,7 @@
          </div>
 
          <div class="row g-4 align-items-center">
-             <div class="col-lg-5 col-xl-5 contact-form wow fadeInLeft" data-wow-delay="0.1s">
+             <div class="col-md-6  contact-form wow fadeInLeft" data-wow-delay="0.1s">
                  <h2 class="display-5 mb-2">Entrer en contact</h2>
                  <p class="mb-4">
                      Vous souhaitez nous poser une question, nous faire une suggestion ou proposer une collaboration ? Remplissez simplement ce formulaire, et notre équipe vous répondra dans les meilleurs délais.
@@ -86,14 +86,35 @@
                      </div>
                  </form>
              </div>
-             <div class="col-lg-2 col-xl-2 wow fadeInUp" data-wow-delay="0.5s">
-                 <div class="bg-transparent rounded">
+           
+
+             <div class="col-md-6 wow fadeInRight" data-wow-delay="0.3s">
+                 <div class="d-flex justify-content-center mb-4">
+                     <a class="btn btn-lg-square btn-light rounded-circle mx-2" target="_blank" href="https://wa.me/2290192161743?text=Bonjour%2C%20je%20souhaite%20avoir%20plus%20d'informations"><i class="fa-brands fa-whatsapp"></i></i></a>
+                     <a class="btn btn-lg-square btn-light rounded-circle mx-2" target="_blank" href="https://www.facebook.com/share/1dpd53Hw1d/."><i class="fab fa-facebook-f"></i></a>
+                     <a class="btn btn-lg-square btn-light rounded-circle mx-2" target="_blank" href="https://www.tiktok.com/@iicacfv_drabo"><i class="fa-brands fa-tiktok"></i></a>
+                     <a class="btn btn-lg-square btn-light rounded-circle mx-2" target="_blank" href="https://www.instagram.com/iicacfv?igsh=cWdqNXVjZm1ocWxu"><i class="fab fa-instagram"></i></a>
+
+                 </div>
+                 <div class="rounded h-100">
+                     <iframe class="rounded w-100"
+                         style="height: 500px;"
+                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.9189709119084!2d-122.08424968469258!3d37.42206597982598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb6ad2b8e6f0f%3A0x3bfc1d967d8be3b7!2sGoogleplex!5e0!3m2!1sfr!2sfr!4v1621234567890"
+                         loading="lazy"
+                         referrerpolicy="no-referrer-when-downgrade"
+                         allowfullscreen></iframe>
+                 </div>
+             </div>
+         </div>
+         <div class="row mt-5">
+              <div class=" wow fadeInUp" data-wow-delay="0.5s">
+                 <div class="bg-transparent rounded d-flex justify-content-between">
                      <div class="d-flex flex-column align-items-center text-center mb-4">
                          <div class="bg-white d-flex align-items-center justify-content-center mb-3 icone btn btn-lg-square btn btn-light" style="width: 90px; height: 90px; border-radius: 50px;">
                              <i class="fa fa-map-marker-alt fa-2x "></i>
                          </div>
                          <h4 class="text-dark">Adresse</h4>
-                         <p class="mb-0">Abomey-sodium_crypto_pwhash_scryptsalsa208sha256_str_verify, Bénin</p>
+                         <p class="mb-0">Abomey-Calavi, Bénin</p>
                      </div>
                      <div class="d-flex flex-column align-items-center text-center mb-4">
                          <div class="bg-white d-flex align-items-center justify-content-center mb-3 icone btn btn-lg-square btn btn-light" style="width: 90px; height: 90px; border-radius: 50px;">
@@ -109,24 +130,6 @@
                          <h4 class="text-dark">Email</h4>
                          <p class="mb-0">iicacfv@gmail.com</p>
                      </div>
-                 </div>
-             </div>
-
-             <div class="col-lg-5 col-xl-5 wow fadeInRight" data-wow-delay="0.3s">
-                 <div class="d-flex justify-content-center mb-4">
-                    <a class="btn btn-lg-square btn-light rounded-circle mx-2" target="_blank" href="https://wa.me/2290192161743?text=Bonjour%2C%20je%20souhaite%20avoir%20plus%20d'informations"><i class="fa-brands fa-whatsapp"></i></i></a>
-                     <a class="btn btn-lg-square btn-light rounded-circle mx-2" target="_blank" href="https://www.facebook.com/share/1dpd53Hw1d/."><i class="fab fa-facebook-f"></i></a>
-                     <a class="btn btn-lg-square btn-light rounded-circle mx-2" target="_blank" href="https://www.tiktok.com/@iicacfv_drabo"><i class="fa-brands fa-tiktok"></i></a>
-                     <a class="btn btn-lg-square btn-light rounded-circle mx-2" target="_blank" href="https://www.instagram.com/iicacfv?igsh=cWdqNXVjZm1ocWxu"><i class="fab fa-instagram"></i></a>
-                  
-                 </div>
-                 <div class="rounded h-100">
-                     <iframe class="rounded w-100"
-                         style="height: 500px;"
-                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.9189709119084!2d-122.08424968469258!3d37.42206597982598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb6ad2b8e6f0f%3A0x3bfc1d967d8be3b7!2sGoogleplex!5e0!3m2!1sfr!2sfr!4v1621234567890"
-                         loading="lazy"
-                         referrerpolicy="no-referrer-when-downgrade"
-                         allowfullscreen></iframe>
                  </div>
              </div>
          </div>
