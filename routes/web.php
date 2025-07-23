@@ -2,10 +2,13 @@
 
 use App\Http\Controllers\ActualiteController;
 use App\Http\Controllers\CibleController;
+use App\Http\Controllers\EquipeController;
 use App\Http\Controllers\EvenementController;
 use App\Http\Controllers\GalerieController;
+use App\Http\Controllers\RestaurantController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\VisiteurController;
+use App\Models\Equipe;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -35,9 +38,10 @@ Route::get('evenement', function () {
 Route::get('service', function () {
     return view('service');
 });
-Route::get('actualite', function () {
-    return view('actualite');
+Route::get('restaurant', function () {
+    return view('restaurant');
 });
+
 
 Route::get('categorie', [ServiceController::class, 'create']);
 Route::post('categorie', [ServiceController::class, 'store'])->name('categorie');
@@ -89,6 +93,22 @@ Route::put('/update_actu/{id}', [ActualiteController::class, 'updatex'])->name('
 Route::get('/table_actu', [ActualiteController::class, 'table_actu'])->name('table_actu');
 Route::delete('/destroyx/{id}', [ActualiteController::class, 'destroyx'])->name('destroyx');
 Route::get('/actualite', [ActualiteController::class, 'actu'])->name('actualite');
+
+Route::get('ajout_resto', [RestaurantController::class, 'creation']);
+Route::post('ajout_resto', [RestaurantController::class, 'creations'])->name('ajout_resto');
+Route::get('/table_resto', [RestaurantController::class, 'table_resto'])->name('table_resto');
+Route::delete('/delete_resto/{id}', [RestaurantController::class, 'delete_resto'])->name('delete_resto');
+Route::get('/update_resto/{id}', [RestaurantController::class, 'edit_resto'])->name('edit_resto');
+Route::put('/update_resto/{id}', [RestaurantController::class, 'update_resto'])->name('update_resto');
+Route::get('restaurant', [RestaurantController::class, 'restaurant'])->name('restaurant');
+
+Route::get('ajout_equipe', [EquipeController::class, 'create_equipe']);
+Route::post('ajout_equipe', [EquipeController::class, 'store_equipe'])->name('ajout_equipe');
+Route::get('/table_equipe', [EquipeController::class, 'table_equipe'])->name('table_equipe');
+Route::delete('/destroy_equipe/{id}', [EquipeController::class, 'destroy_equipe'])->name('destroy_equipe');
+Route::get('/update_equipe/{id}', [EquipeController::class, 'edit_equipe'])->name('edit_equipe');
+Route::put('/update_equipe/{id}', [EquipeController::class, 'update_equipe'])->name('update_equipe');
+
 
 Route::get('/home', [VisiteurController::class, 'visiteur'])->name('home');
 

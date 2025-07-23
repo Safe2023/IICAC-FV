@@ -44,7 +44,8 @@
                 </div>
             </div>
         </div>
-<!-- tableau recapitulatif de cible -->
+        <!-- tableau recapitulatif de cible -->
+        <h4 class="mb-4">Liste des galeries</h4>
         <table class="table table-striped align-middle">
             <thead class="table-dark">
                 <tr>

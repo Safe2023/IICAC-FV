@@ -15,7 +15,7 @@
                 </div>
             </div>
             <div class="col-5 align-self-end">
-                <img src="/assets/img/au/profile-img.png" alt="" class="img-fluid">
+                <img src="/img/logo_iicacfv.png" alt="" class="img-fluid">
             </div>
         </div>
     </div>

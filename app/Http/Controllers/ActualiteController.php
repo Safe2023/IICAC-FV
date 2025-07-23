@@ -14,7 +14,7 @@ class ActualiteController extends Controller
 
     public function actu()
     {
-        $actualite = Actualite::latest()->get();
+          $actualite = Actualite::latest()->paginate(6);
         return view('actualite', compact('actualite'));
     }
 

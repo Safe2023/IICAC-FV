@@ -152,51 +152,98 @@
             transform: translateY(0);
         }
     }
-   .bg-danger {
-    background-color: #2C3E50 !important;
-    transition: background-color 0.3s ease;
-}
 
-.bg-danger:hover {
-    background-color: #E94F37 !important;
-    cursor: pointer;
-}
+    .bg-danger {
+        background-color: #E94F37 !important;
+        transition: background-color 0.3s ease;
+    }
 
- .text-danger{
-   color: #E94F37 !important;
-    transition: color 0.3s ease;
-}
+    .bg-danger:hover {
+        background-color: #2C3E50 !important;
+        cursor: pointer;
+    }
 
-.text-danger:hover {
-   color: #2C3E50 !important;
-    cursor: pointer;
-}
-.sdse{
-     background-color: #2C3E50 !important;
-}
-.sqdxqs{
-color: #E94F37 !important;
-}
-.sqxsx{
-    
-}
+    .text-danger {
+        color: #E94F37 !important;
+        transition: color 0.3s ease;
+    }
+
+    .text-danger:hover {
+        color: #2C3E50 !important;
+        cursor: pointer;
+    }
+
+    .sdse {
+        background-color: #2C3E50 !important;
+    }
+
+    .sqdxqs {
+        color: #E94F37 !important;
+    }
+
+    #spinner {
+        background-color: #ffffff;
+        position: fixed;
+        z-index: 9999;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .custom-spinner {
+        width: 4rem;
+        height: 4rem;
+        border: 0.5rem solid #f3f3f3;
+        border-top: 0.5rem solid #E94F37;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    /* Par défaut pour desktop */
+    .logo-img {
+        width: 150px;
+        height: auto;
+    }
+
+    /* Ajustement pour mobile */
+    @media (max-width: 576px) {
 
 
+        .logo-img {
+            width: 80px;
+            height: auto;
+        }
+
+
+    }
 </style>
 
 <body>
 
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
+    <div id="spinner" class="show">
+        <div class="custom-spinner" role="status" aria-label="Chargement..."></div>
     </div>
     <!-- Spinner End -->
 
 
     <!-- Topbar Start -->
-   <div class="container-fluid bg-dark px-5 d-none d-lg-block sdse">
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block sdse">
         <div class="row gx-0 align-items-center" style="height: 45px;">
             <div class="col-lg-8 text-center text-lg-start mb-lg-0">
                 <div class="d-flex flex-wrap">
@@ -211,20 +258,21 @@ color: #E94F37 !important;
                 <div class="d-flex align-items-center justify-content-end">
                     <a class="btn btn-light btn-square border rounded-circle nav-fill me-3" target="_blank" href="https://wa.me/2290192161743?text=Bonjour%2C%20je%20souhaite%20avoir%20plus%20d'informations"><i class="fa-brands fa-whatsapp"></i></i></a>
                     <a class="btn btn-light btn-square border rounded-circle nav-fill me-3 " target="_blank" href="https://www.facebook.com/share/1dpd53Hw1d/."><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-light btn-square border rounded-circle nav-fill me-3 " target="_blank"  href="https://www.tiktok.com/@iicacfv_drabo"><i class="fa-brands fa-tiktok"></i></a>
+                    <a class="btn btn-light btn-square border rounded-circle nav-fill me-3 " target="_blank" href="https://www.tiktok.com/@iicacfv_drabo"><i class="fa-brands fa-tiktok"></i></a>
                     <a class="btn btn-light btn-square border rounded-circle nav-fill me-0 " target="_blank" href="https://www.instagram.com/iicacfv?igsh=cWdqNXVjZm1ocWxu"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
     <!-- Topbar End -->
 
 
     <!-- Navbar & Hero Start -->
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
-            <a href="/" class="navbar-brand p-0">
-                <img src="/img/logo_iicacfv.png" width="150" height="150" alt="Logo">
+            <a href="/" class="navbar-brand p-0 d-flex align-items-center gap-2 flex-wrap flex-sm-nowrap">
+                <img src="/img/logo_iicacfv.png" class="logo-img" alt="Logo 1">
+                <img src="/img/evas_logo.jpg" class="logo-img" alt="Logo 2">
             </a>
 
             <!-- Bouton menu mobile -->
@@ -257,7 +305,10 @@ color: #E94F37 !important;
                     </li>
                     <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
                 </ul>
-                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 ms-3">Découvrir l’Institut</a>
+                <a href="/restaurant" class="btn btn-primary rounded-pill text-white py-2 px-4 ms-3">
+                    Service de Restauration
+                </a>
+
             </div>
 
             <!-- Menu mobil -->
@@ -288,15 +339,15 @@ color: #E94F37 !important;
                         </li>
                         <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
                     </ul>
-                    <a href="#" class="btn btn-primary w-100 rounded-pill text-white py-2 mt-3">Découvrir l’Institut</a>
+                    <a href="/restaurant" class="btn btn-primary w-100 rounded-pill text-white py-2 mt-3">Service de Restauration</a>
 
                     <div class="col-lg-4 text-center text-lg-end" style=" position: absolute; bottom: 0;">
                         <div class="d-flex align-items-center  " style="justify-content: space-around;">
-                             <i class="fas fa-share fa-2x text-white me-2"></i>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.facebook.com/share/1dpd53Hw1d/."><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://wa.me/2290192161743?text=Bonjour%2C%20je%20souhaite%20avoir%20plus%20d'informations"><i class="fa-brands fa-whatsapp"></i></i></a>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.tiktok.com/@iicacfv_drabo"><i class="fa-brands fa-tiktok"></i></a>
-                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.instagram.com/iicacfv?igsh=cWdqNXVjZm1ocWxu"><i class="fab fa-instagram"></i></a>
+                            <i class="fas fa-share fa-2x text-white me-2"></i>
+                            <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.facebook.com/share/1dpd53Hw1d/."><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://wa.me/2290192161743?text=Bonjour%2C%20je%20souhaite%20avoir%20plus%20d'informations"><i class="fa-brands fa-whatsapp"></i></i></a>
+                            <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.tiktok.com/@iicacfv_drabo"><i class="fa-brands fa-tiktok"></i></a>
+                            <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.instagram.com/iicacfv?igsh=cWdqNXVjZm1ocWxu"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -312,8 +363,9 @@ color: #E94F37 !important;
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
-                            <a href="/">
-                                <img src="/img/logo_iicacfv.png" width="150px" height="150px" alt="">
+                            <a href="/" class="navbar-brand p-0 d-flex align-items-center gap-2 flex-wrap flex-sm-nowrap">
+                                <img src="/img/logo_iicacfv.png" class="logo-img" alt="Logo 1">
+                                <img src="/img/evas_logo.jpg" class="logo-img" alt="Logo 2">
                             </a>
                             <p>
                                 L’Institut d’Innovation et de Créativité Artistique et Culturelle-Félicienne VODOUNNON est un espace vivant de promotion de la culture, de la création et des talents artistiques du Bénin et d’ailleurs.
@@ -336,6 +388,7 @@ color: #E94F37 !important;
                             <a href="/actuelite"><i class="fas fa-angle-right me-2"></i> Actualités</a>
                             <a href="/evenement"><i class="fas fa-angle-right me-2"></i> Evenements</a>
                             <a href="/contact"><i class="fas fa-angle-right me-2"></i> Contact</a>
+                            <a href="/restaurant"><i class="fas fa-angle-right me-2"></i> Restauration</a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3">
@@ -371,34 +424,37 @@ color: #E94F37 !important;
         <!-- Back to Top -->
         <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const currentPath = window.location.pathname;
-        document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
-            const linkPath = new URL(link.href).pathname;
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const currentPath = window.location.pathname;
+                document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+                    const linkPath = new URL(link.href).pathname;
 
-            if (linkPath === currentPath) {
-                link.classList.add('active');
-            } else {
-                link.classList.remove('active');
-            }
+                    if (linkPath === currentPath) {
+                        link.classList.add('active');
+                    } else {
+                        link.classList.remove('active');
+                    }
 
-            if (link.textContent.trim().includes("Nos Événements")) {
-                if (currentPath.startsWith("/event")) {
-                    link.classList.add("active");
-                } else {
-                    link.classList.remove("active");
-                }
-            }
-        });
-    });
-</script>
-
+                    if (link.textContent.trim().includes("Nos Événements")) {
+                        if (currentPath.startsWith("/event")) {
+                            link.classList.add("active");
+                        } else {
+                            link.classList.remove("active");
+                        }
+                    }
+                });
+            });
+        </script>
 
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
         <script src="{{ asset('lib/wow/wow.min.js') }}"></script>
         <script src="{{ asset('lib/easing/easing.min.js') }}"></script>
         <script src="{{ asset('lib/waypoints/waypoints.min.js') }}"></script>

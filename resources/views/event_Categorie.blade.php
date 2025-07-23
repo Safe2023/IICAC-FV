@@ -19,7 +19,7 @@
      <div class="container py-5">
          <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.2s">
              <div class="sub-style">
-                 <h4 class="sub-title  mb-0">Nos Événements</h4>
+                 <h4 class="sub-title  mb-0" style="font-size: 15px;">Nos Événements</h4>
              </div>
              <h1 class="mb-4">Des expériences culturelles riches et variées</h1>
              <!--  <p class="mb-0">
@@ -158,8 +158,7 @@
                         </div>
 
                         <div class="modal-footer border-0">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                        </div>
+<a href="https://wa.me/2290192161743" target="_blank" class="btn btn-primary rounded-pill text-white py-2 px-4 ms-3">Reserver</a>                        </div>
                     </div>
                 </div>
             </div>

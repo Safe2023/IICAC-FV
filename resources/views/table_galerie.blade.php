@@ -79,7 +79,9 @@
         <!-- Tableau des galeries -->
         <div class="col-md-7">
             <h4 class="mb-4">Liste des galeries</h4>
-
+ @if(session('success'))
+        <div class="alert alert-success">{{ session('success') }}</div>
+        @endif
             <table class="table table-striped align-middle">
                 <thead class="table-dark">
                     <tr>

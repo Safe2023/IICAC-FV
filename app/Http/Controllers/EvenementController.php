@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Categorie;
+use App\Models\Equipe;
 use App\Models\Evenement;
 use App\Models\Galerie;
 use App\Models\PublicCible;
@@ -21,7 +22,9 @@ class EvenementController extends Controller
         $evenements = Evenement::latest()->paginate(3);
         $galeries = Galerie::with('categorie')->paginate(3);
         $actualite = Galerie::with('categorie')->paginate(3);
-        return view('welcome', compact('evenements', 'categories', 'cible', 'galeries','actualite'));
+        $equipe = Equipe::all();
+
+        return view('welcome', compact('evenements', 'categories', 'cible', 'galeries','actualite','equipe'));
     }
     /* public function event_Categorie($id)
 {
@@ -110,8 +113,8 @@ class EvenementController extends Controller
         }
 
         $evenements = $query->with(['categorie', 'publicCible'])->latest()->paginate(6);
-        /* $galeries = $query->with(['categorie'])->latest()->paginate(6);
- */
+         $galeries = Galerie::latest()->paginate(6);
+
         return view('evenement', compact('evenements', 'categories', 'cible', 'galeries'));
     }
     public function editees($id)

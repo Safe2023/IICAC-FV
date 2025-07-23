@@ -33,10 +33,11 @@
                         <select class="form-select" id="categorie_id" name="categorie_id" required value="{{ $galerie->categorie_id }}">
                             <option value="" disabled selected>Choisir une catégorie</option>
                             @foreach($categories as $categorie)
-                            <option value="{{ $galerie->categorie_id }}">
+                            <option value="{{ $categorie->id }}" {{ $galerie->categorie_id == $categorie->id ? 'selected' : '' }}>
                                 {{ $categorie->name_categorie }}
                             </option>
                             @endforeach
+
                         </select>
                     </div>
 

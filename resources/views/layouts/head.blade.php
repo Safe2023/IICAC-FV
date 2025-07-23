@@ -130,7 +130,7 @@
                                 <span key="t-dashboards">Tableau de bord</span>
                             </a>
                         </li>
-                      
+
                         </li>
 
                         <li>
@@ -142,7 +142,7 @@
                                 <li><a href="/table_categorie" key="t-create-new">Table categorie</a></li>
                             </ul>
                         </li>
-                         <li>
+                        <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class="bx bx-briefcase-alt-2"></i>
                                 <span key="t-projects">Cible</span>
@@ -161,7 +161,7 @@
                             </ul>
                         </li>
 
-                         <li>
+                        <li>
                             <a href="javascript: void(0);" class="has-arrow waves-effect">
                                 <i class="bx bx-briefcase-alt-2"></i>
                                 <span key="t-projects">Actualiter</span>
@@ -180,6 +180,24 @@
                             </ul>
                         </li>
 
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="bx bx-briefcase-alt-2"></i>
+                                <span key="t-projects">Restauration</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="/table_resto" key="t-create-new">Table restaurant</a></li>
+                            </ul>
+                        </li>
+                         <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="bx bx-briefcase-alt-2"></i>
+                                <span key="t-projects">Equipes</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="/table_equipe" key="t-create-new">Table equipe</a></li>
+                            </ul>
+                        </li>
 
                     </ul>
                 </div>

@@ -1,34 +1,24 @@
  @extends('layouts.index')
  @section('content')
-<!--  <div class="container-fluid bg-breadcrumb" style="background-image: url('img/dance4.jpg');background-position: center center;background-repeat: no-repeat;background-size: cover;padding: 160px 0 60px 0;">
-     <div class="container text-center py-5" style="max-width: 900px;">
-         <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Nos Événements</h1>
-             <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
-                 <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
-                 <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                 <li class="breadcrumb-item active ">Evenements</li>
-             </ol>
-     </div>
- </div> -->
 
-  <section class="position-relative" style="background-image: url('/img/img_event.jpg'); background-size: cover; background-position: center; padding: 120px 0;">
-    <div class="container text-center text-white position-relative" style="z-index: 1;">
-        <h1 class="display-4 fw-bold">Nos Événements</h1>
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb justify-content-center">
-                <li class="breadcrumb-item"><a href="/" class="text-white text-decoration-none">Accueil</a></li>
-                <li class="breadcrumb-item active text-white" aria-current="page">Événements</li>
-            </ol>
-        </nav>
-    </div>
-    <!-- Overlay sombre pour lisibilité du texte -->
-    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.5);"></div>
-</section>
+ <section class="position-relative" style="background-image: url('/img/img_event.jpg'); background-size: cover; background-position: center; padding: 120px 0;">
+     <div class="container text-center text-white position-relative" style="z-index: 1;">
+         <h1 class="display-4 fw-bold">Nos Événements</h1>
+         <nav aria-label="breadcrumb">
+             <ol class="breadcrumb justify-content-center">
+                 <li class="breadcrumb-item"><a href="/" class="text-white text-decoration-none">Accueil</a></li>
+                 <li class="breadcrumb-item active text-white" aria-current="page">Événements</li>
+             </ol>
+         </nav>
+     </div>
+
+     <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.5);"></div>
+ </section>
  <div class="container-fluid service ">
      <div class="container py-5">
          <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.2s">
              <div class="sub-style">
-                 <h4 class="sub-title mb-0">Tous les Événements</h4>
+                 <h4 class="sub-title mb-0" style="color: #E94F37;font-size: 17px;">Nos Événements</h4>
              </div>
              <h1 class="mb-4">Des expériences culturelles riches et variées</h1>
              <p class="mb-0">
@@ -42,7 +32,7 @@
                  <div class="col-md-10">
                      <div class="d-flex flex-wrap gap-3 justify-content-end">
 
-                         <!-- Filtre Catégorie -->
+
                          <div class="input-group w-auto">
                              <span class="input-group-text bg-danger text-white border-danger">
                                  <i class="fas fa-layer-group"></i>
@@ -182,7 +172,7 @@
                          </div>
 
                          <div class="modal-footer border-0">
-                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                             <a href="https://wa.me/2290192161743" target="_blank" class="btn btn-primary rounded-pill text-white py-2 px-4 ms-3">Reserver</a>
                          </div>
                      </div>
                  </div>
@@ -251,8 +241,8 @@
          </div>
 
          <div class="row g-4">
+             @foreach($galeries as $galerie)
              <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-                 @foreach($galeries as $galerie)
                  <div class="position-relative rounded overflow-hidden shadow-sm gallery-card mb-4">
 
                      <span class="badge bg-danger position-absolute top-0 end-0 m-3 px-3 py-2 rounded-pill text-white" style="background-color: #E94F37;">
@@ -273,9 +263,50 @@
                      </div>
 
                  </div>
-                 @endforeach
+             </div>
+             @endforeach
+             <div class="container d-flex justify-content-center mt-4">
+                 @if ($galeries->hasPages())
+                 <nav>
+                     <ul class="pagination justify-content-center">
+                         @if ($galeries->onFirstPage())
+                         <li class="page-item disabled">
+                             <span class="page-link text-white" style="background-color: rgb(233, 145, 131);">Précédent</span>
+                         </li>
+                         @else
+                         <li class="page-item">
+                             <a class="page-link text-white" style="background-color: #E94F37;" href="{{ $galeries->appends(request()->query())->previousPageUrl() }}" rel="prev">Précédent</a>
+                         </li>
+                         @endif
+
+                         @foreach ($elements = $galeries->links()->elements[0] as $page => $url)
+                         @if ($page == $galeries->currentPage())
+                         <li class="page-item active">
+                             <span class="page-link border-0 text-white" style="background-color: #E94F37;">{{ $page }}</span>
+                         </li>
+                         @else
+                         <li class="page-item">
+                             <a class="page-link text-dark border-0" href="{{ $url }}">{{ $page }}</a>
+                         </li>
+                         @endif
+                         @endforeach
+
+                         @if ($galeries->hasMorePages())
+                         <li class="page-item">
+                             <a class="page-link text-white" style="background-color:rgb(233, 145, 131);" href="{{ $galeries->appends(request()->query())->nextPageUrl() }}" rel="next">Suivant</a>
+                         </li>
+                         @else
+                         <li class="page-item disabled">
+                             <span class="page-link text-white" style="background-color:rgb(233, 145, 131);">Suivant</span>
+                         </li>
+                         @endif
+
+                     </ul>
+                 </nav>
+                 @endif
 
              </div>
          </div>
-
-         @endsection
+     </div>
+ </div>
+ @endsection

@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
 
-        <!-- Bouton pour ouvrir le modal -->
+      <!-- Bouton pour ouvrir le modal -->
 <div class="text-center my-4">
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#evenementModal">
         Ajouter un événement
@@ -12,17 +12,16 @@
 
 <!-- Modal -->
 <div class="modal fade" id="evenementModal" tabindex="-1" aria-labelledby="evenementModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered modal-scrollable">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
         <div class="modal-content">
-        
             <div class="modal-header">
                 <h5 class="modal-title" id="evenementModalLabel">Ajouter un événement</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
             </div>
-            
-            <div class="modal-body">
+
+            <div class="modal-body" style="max-height: 80vh; overflow-y: auto;">
                 @if(session('success'))
-                <div class="alert alert-success">{{ session('success') }}</div>
+                    <div class="alert alert-success">{{ session('success') }}</div>
                 @endif
 
                 <form action="{{ route('ajout_event') }}" method="POST" enctype="multipart/form-data">
@@ -75,7 +74,7 @@
                         <select name="categorie_id" class="form-select">
                             <option value="">Choisir une catégorie</option>
                             @foreach($categories as $categorie)
-                            <option value="{{ $categorie->id }}">{{ $categorie->name_categorie }}</option>
+                                <option value="{{ $categorie->id }}">{{ $categorie->name_categorie }}</option>
                             @endforeach
                         </select>
                     </div>
@@ -85,7 +84,7 @@
                         <select name="public_cible_id" class="form-select">
                             <option value="">Choisir un public</option>
                             @foreach($cible as $cibles)
-                            <option value="{{ $cibles->id }}">{{ $cibles->cible }}</option>
+                                <option value="{{ $cibles->id }}">{{ $cibles->cible }}</option>
                             @endforeach
                         </select>
                     </div>
@@ -97,11 +96,9 @@
 
                     <div class="mb-3">
                         <label for="image" class="form-label">Image</label>
-                        <input type="file" name="image" id="image" class="form-control @error('image') is-invalid @enderror" accept="image/*">
+                        <input type="file" name="image" class="form-control @error('image') is-invalid @enderror" accept="image/*">
                         @error('image')
-                        <div class="invalid-feedback">
-                            {{ $message }}
-                        </div>
+                        <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
                     </div>
 
@@ -110,10 +107,13 @@
                     </div>
                 </form>
             </div>
-            
         </div>
     </div>
 </div>
+ <h4 class="mb-4">Liste des evenements</h4>
+ @if(session('success'))
+        <div class="alert alert-success">{{ session('success') }}</div>
+        @endif
 
             <table class="table table-striped align-middle">
                 <thead class="table-dark">

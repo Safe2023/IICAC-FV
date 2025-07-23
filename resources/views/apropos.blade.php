@@ -14,7 +14,7 @@
 
  <section class="position-relative" style="background-image: url('/img/img_apropos.jpg'); background-size: cover; background-position: center; padding: 120px 0;">
     <div class="container text-center text-white position-relative" style="z-index: 1;">
-        <h1 class="display-4 fw-bold">À propos de nous</h1>
+        <h1 class="display-4 fw-bold text-white">À propos de nous</h1>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb justify-content-center">
                 <li class="breadcrumb-item"><a href="/" class="text-white text-decoration-none">Accueil</a></li>
@@ -30,7 +30,7 @@
      <div class="container ">
          <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
              <div class="sub-style">
-                 <h6 class="sub-title mb-0" style="color: #E94F37;">À propos de l’Institut</h6>
+                 <h6 class="sub-title mb-0" style="color: #E94F37;">À propos</h6>
              </div>
              <h1 class="text-dark mb-4">Un espace vivant au service de la créativité et de la culture</h1>
              <p class="">
@@ -153,4 +153,6 @@
          </div>
      </div>
  </div>
+
+ 
  @endsection

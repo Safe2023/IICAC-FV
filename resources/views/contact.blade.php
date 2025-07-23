@@ -12,7 +12,7 @@
  </style>
  <section class="position-relative" style="background-image: url('/img/img_event.jpg'); background-size: cover; background-position: center; padding: 120px 0;">
      <div class="container text-center text-white position-relative" style="z-index: 1;">
-         <h1 class="display-4 fw-bold">Nous Contacter</h1>
+         <h1 class="display-4 fw-bold text-white">Nous Contacter</h1>
          <nav aria-label="breadcrumb">
              <ol class="breadcrumb justify-content-center">
                  <li class="breadcrumb-item"><a href="/" class="text-white text-decoration-none">Accueil</a></li>
@@ -29,7 +29,7 @@
          <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
              <div class="sub-style">
 
-                 <h5 class="sub-title mb-0" style="color: #E94F37;">Nous Contacter</h5>
+                 <h5 class="sub-title mb-0" style="color: #E94F37;">Contact</h5>
              </div>
              <h1 class=" mb-4">Découvrez la vie du Centre au jour le jour</h1>
              <p class="mb-0 text-black-50">
@@ -86,7 +86,7 @@
                      </div>
                  </form>
              </div>
-           
+
 
              <div class="col-md-6 wow fadeInRight" data-wow-delay="0.3s">
                  <div class="d-flex justify-content-center mb-4">
@@ -107,30 +107,39 @@
              </div>
          </div>
          <div class="row mt-5">
-              <div class=" wow fadeInUp" data-wow-delay="0.5s">
-                 <div class="bg-transparent rounded d-flex justify-content-between">
-                     <div class="d-flex flex-column align-items-center text-center mb-4">
-                         <div class="bg-white d-flex align-items-center justify-content-center mb-3 icone btn btn-lg-square btn btn-light" style="width: 90px; height: 90px; border-radius: 50px;">
-                             <i class="fa fa-map-marker-alt fa-2x "></i>
+             <div class=" wow fadeInUp" data-wow-delay="0.5s">
+                 <div class="row text-center justify-content-center">
+                     <div class="col-12 col-md-4 mb-4">
+                         <div class="d-flex flex-column align-items-center">
+                             <div class="bg-white d-flex align-items-center justify-content-center mb-3 icone btn btn-lg-square btn btn-light" style="width: 90px; height: 90px; border-radius: 50px;">
+                                 <i class="fa fa-map-marker-alt fa-2x "></i>
+                             </div>
+                             <h4 class="text-dark">Adresse</h4>
+                             <p class="mb-0">Abomey-Calavi, Bénin</p>
                          </div>
-                         <h4 class="text-dark">Adresse</h4>
-                         <p class="mb-0">Abomey-Calavi, Bénin</p>
                      </div>
-                     <div class="d-flex flex-column align-items-center text-center mb-4">
-                         <div class="bg-white d-flex align-items-center justify-content-center mb-3 icone btn btn-lg-square btn btn-light" style="width: 90px; height: 90px; border-radius: 50px;">
-                             <i class="fa fa-phone-alt fa-2x"></i>
+
+                     <div class="col-12 col-md-4 mb-4">
+                         <div class="d-flex flex-column align-items-center">
+                             <div class="bg-white d-flex align-items-center justify-content-center mb-3 icone btn btn-lg-square btn btn-light" style="width: 90px; height: 90px; border-radius: 50px;">
+                                 <i class="fa fa-phone-alt fa-2x"></i>
+                             </div>
+                             <h4 class="text-dark">Téléphone</h4>
+                             <p class="mb-0">+229 01 92 16 17 43</p>
                          </div>
-                         <h4 class="text-dark">Téléphone</h4>
-                         <p class="mb-0">+229 01 92 16 17 43</p>
                      </div>
-                     <div class="d-flex flex-column align-items-center text-center">
-                         <div class="bg-white d-flex align-items-center justify-content-center mb-3 icone btn btn-lg-square btn btn-light" style="width: 90px; height: 90px; border-radius: 50px;">
-                             <i class="fa fa-envelope-open fa-2x"></i>
+
+                     <div class="col-12 col-md-4 mb-4">
+                         <div class="d-flex flex-column align-items-center">
+                             <div class="bg-white d-flex align-items-center justify-content-center mb-3 icone btn btn-lg-square btn btn-light" style="width: 90px; height: 90px; border-radius: 50px;">
+                                 <i class="fa fa-envelope-open fa-2x"></i>
+                             </div>
+                             <h4 class="text-dark">Email</h4>
+                             <p class="mb-0">iicacfv@gmail.com</p>
                          </div>
-                         <h4 class="text-dark">Email</h4>
-                         <p class="mb-0">iicacfv@gmail.com</p>
                      </div>
                  </div>
+
              </div>
          </div>
      </div>

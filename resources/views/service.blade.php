@@ -1,9 +1,13 @@
 @extends('layouts.index')
 @section('content')
-
+<style>
+    .sxq{
+        margin-bottom: 10px;
+    }
+</style>
    <section class="position-relative" style="background-image: url('/img/img_service.jpg'); background-size: cover; background-position: center; padding: 120px 0;">
-    <div class="container text-center text-white position-relative" style="z-index: 1;">
-        <h1 class="display-4 fw-bold">Nos services</h1>
+    <div class="container text-center text-white position-relative sxq" style="z-index: 1;">
+        <h1 class="display-4 fw-bold ">Nos services</h1>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb justify-content-center">
                 <li class="breadcrumb-item"><a href="/" class="text-white text-decoration-none">Accueil</a></li>

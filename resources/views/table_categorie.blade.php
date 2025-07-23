@@ -47,6 +47,7 @@
 </div>
 
         <div class="col-md-6">
+             <h4 class="mb-4">Liste des galeries</h4>
             <table class="table table-striped align-middle">
                 <thead class="table-dark">
                     <tr>
@@ -56,7 +57,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @forelse ($table_categorie as $index => $table_categories)
+                    @foreach ($table_categorie as $index => $table_categories)
                     <tr>
                         <th scope="row">{{ $index + 1 }}</th>
 
@@ -73,11 +74,8 @@
                             </form>
                         </td>
                     </tr>
-                    @empty
-                    <tr>
-                        <td colspan="4" class="text-center">Aucune catégorie enregistrée.</td>
-                    </tr>
-                    @endforelse
+                   
+                    @endforeach
                 </tbody>
             </table>
         </div>
