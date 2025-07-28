@@ -12,7 +12,7 @@
  </style>
  <section class="position-relative" style="background-image: url('/img/img_event.jpg'); background-size: cover; background-position: center; padding: 120px 0;">
      <div class="container text-center text-white position-relative" style="z-index: 1;">
-         <h1 class="display-4 fw-bold text-white">Nous Contacter</h1>
+         <h1 class="display-4 fw-bold text-white">Contactez-nous</h1>
          <nav aria-label="breadcrumb">
              <ol class="breadcrumb justify-content-center">
                  <li class="breadcrumb-item"><a href="/" class="text-white text-decoration-none">Accueil</a></li>
@@ -28,7 +28,6 @@
      <div class="container ">
          <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
              <div class="sub-style">
-
                  <h5 class="sub-title mb-0" style="color: #E94F37;">Contact</h5>
              </div>
              <h1 class=" mb-4">Découvrez la vie du Centre au jour le jour</h1>
@@ -99,7 +98,7 @@
                  <div class="rounded h-100">
                      <iframe class="rounded w-100"
                          style="height: 500px;"
-                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.9189709119084!2d-122.08424968469258!3d37.42206597982598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb6ad2b8e6f0f%3A0x3bfc1d967d8be3b7!2sGoogleplex!5e0!3m2!1sfr!2sfr!4v1621234567890"
+                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.145149145236!2d2.3022351!3d6.5033028999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1024afbd5f555825%3A0x887b7d30f6c08e93!2sInstitut%20d&#39;Innovation%20et%20de%20Cr%C3%A9ativit%C3%A9%20Artistique%20et%20Culturelle-F%C3%A9licienne%20VODOUNNON%20(IICAC-FV)!5e0!3m2!1sfr!2sbj!4v1753624557336!5m2!1sfr!2sbj"
                          loading="lazy"
                          referrerpolicy="no-referrer-when-downgrade"
                          allowfullscreen></iframe>
@@ -115,7 +114,7 @@
                                  <i class="fa fa-map-marker-alt fa-2x "></i>
                              </div>
                              <h4 class="text-dark">Adresse</h4>
-                             <p class="mb-0">Abomey-Calavi, Bénin</p>
+                             <p class="mb-0">Carrefour Aitchédji vers marché togba, Ab-calavi, Benin</p>
                          </div>
                      </div>
 
