@@ -61,7 +61,7 @@
 
     /*   .bg-light {
         background-color: #fffbe6 !important;
-        
+
     }
  */
     ul li::marker {
@@ -246,7 +246,7 @@
         <div class="row gx-0 align-items-center" style="height: 45px;">
             <div class="col-lg-8 text-center text-lg-start mb-lg-0">
                 <div class="d-flex flex-wrap">
-                    <a href="#" class="text-light me-4"><i class="fas fa-map-marker-alt text-primary me-2 sqdxqs"></i>Localisation</a>
+                    <a href="https://maps.app.goo.gl/vxio3rNB2HW5P4qSA" class="text-light me-4"><i class="fas fa-map-marker-alt text-primary me-2 sqdxqs"></i>Localisation</a>
                     <a href="https://wa.me/2290192161743?text=Bonjour%2C%20je%20souhaite%20avoir%20plus%20d'informations" class="text-light me-4"><i class="fas fa-phone-alt text-primary me-2 sqdxqs"></i>+229 01 92 16 17 43</a>
                     <a href="mailto:iicacfv@gmail.com?subject=Demande%20d'information&body=Bonjour%2C%20j'aimerais%20avoir%20plus%20d'informations%20sur..." class="text-light me-0"><i class="fas fa-envelope text-primary me-2 sqdxqs"></i>iicacfv@gmail.com</a>
                     <div class="col-md-2 text-end">
@@ -301,7 +301,7 @@
 
 
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contactez-nous</a></li>
                 </ul>
                 <a href="/restaurant" class="btn btn-primary rounded-pill text-white py-2 px-4 ms-3">
                     Service de Restauration
@@ -361,10 +361,10 @@
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
-                            <a href="/" class="navbar-brand p-0 d-flex align-items-center gap-2 flex-wrap flex-sm-nowrap">
-                                <img src="/img/logo_iicacfv.png" class="logo-img" alt="Logo 1">
-                                <img src="/img/evas_logo.jpg" class="logo-img" alt="Logo 2">
-                            </a>
+                            <!--<a href="/" class="navbar-brand p-0 d-flex align-items-center gap-2 flex-wrap flex-sm-nowrap">-->
+                            <!--    <img src="/img/logo_iicacfv.png" class="logo-img" alt="Logo 1">-->
+                            <!--    <img src="/img/evas_logo.jpg" class="logo-img" alt="Logo 2">-->
+                            <!--</a>-->
                             <p>
                                 L’Institut d’Innovation et de Créativité Artistique et Culturelle-Félicienne VODOUNNON est un espace vivant de promotion de la culture, de la création et des talents artistiques du Bénin et d’ailleurs.
                             </p>
@@ -380,7 +380,7 @@
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
-                            <h4 class="mb-4 text-white">Quick Links</h4>
+                            <h4 class="mb-4 text-white">Liens rapides</h4>
                             <a href="/apropos"><i class="fas fa-angle-right me-2"></i> A propos</a>
                             <a href="/service"><i class="fas fa-angle-right me-2"></i> Services</a>
                             <a href="/actuelite"><i class="fas fa-angle-right me-2"></i> Actualités</a>
@@ -391,10 +391,10 @@
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
-                            <h4 class="mb-4 text-white">Contacte Info</h4>
-                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> 123 Rue de la Création, Cotonou, Bénin</a>
-                            <a href=""><i class="fas fa-envelope me-2"></i>iicacfv@gmail.com</a>
-                            <a href=""><i class="fas fa-phone me-2"></i> +229 01 92 16 17 43</a>
+                            <h4 class="mb-4 text-white">Contact</h4>
+                            <a href="https://maps.app.goo.gl/vxio3rNB2HW5P4qSA" target="_blank"><i class="fa fa-map-marker-alt me-2"></i>Carrefour Aitchédji vers marché togba, Ab-calavi, Benin</a>
+                            <a href="mailto:iicacfv@gmail.com?subject=Demande%20d'information&body=Bonjour%2C%20j'aimerais%20avoir%20plus%20d'informations%20sur..."><i class="fas fa-envelope me-2"></i>iicacfv@gmail.com</a>
+                            <a href="https://wa.me/2290192161743?text=Bonjour%2C%20je%20souhaite%20avoir%20plus%20d'informations"><i class="fas fa-phone me-2"></i> +229 01 92 16 17 43</a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3">

@@ -440,30 +440,30 @@
     </style>
 
 
-<div class="container-fluid pt-5  bg-white">
-    <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="sub-style">
-            <h4 class="sub-title mb-0" style="color: #E94F37;font-size: 17px;">Nos Partenaires</h4>
-        </div>
-        <h2 class="mb-4">Ils nous font confiance</h2>
+<!--<div class="container-fluid pt-5  bg-white">-->
+<!--    <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">-->
+<!--        <div class="sub-style">-->
+<!--            <h4 class="sub-title mb-0" style="color: #E94F37;font-size: 17px;">Nos Partenaires</h4>-->
+<!--        </div>-->
+<!--        <h2 class="mb-4">Ils nous font confiance</h2>-->
 
 
-        <div class="partner-slider mt-5">
-            <div class="partner-track">
-                <div class="partner-logo"><img src="/img/evas_logo.jpg" alt="Partenaire 1"></div>
-                <div class="partner-logo"><img src="img/logo1.jpg" alt="Partenaire 2"></div>
-                <div class="partner-logo"><img src="img/c1.jpeg" alt="Partenaire 3"></div>
-                <div class="partner-logo"><img src="img/c2.jpeg" alt="Partenaire 4"></div>
-                <div class="partner-logo"><img src="img/c3.png" alt="Partenaire 5"></div>
-                <div class="partner-logo"><img src="img/c4.jpeg" alt="Partenaire 6"></div>
-                <div class="partner-logo"><img src="img/c4.jpg" alt="Partenaire 7"></div>
-            </div>
-        </div>
+<!--        <div class="partner-slider mt-5">-->
+<!--            <div class="partner-track">-->
+<!--                <div class="partner-logo"><img src="/img/evas_logo.jpg" alt="Partenaire 1"></div>-->
+<!--                <div class="partner-logo"><img src="img/logo1.jpg" alt="Partenaire 2"></div>-->
+<!--                <div class="partner-logo"><img src="img/c1.jpeg" alt="Partenaire 3"></div>-->
+<!--                <div class="partner-logo"><img src="img/c2.jpeg" alt="Partenaire 4"></div>-->
+<!--                <div class="partner-logo"><img src="img/c3.png" alt="Partenaire 5"></div>-->
+<!--                <div class="partner-logo"><img src="img/c4.jpeg" alt="Partenaire 6"></div>-->
+<!--                <div class="partner-logo"><img src="img/c4.jpg" alt="Partenaire 7"></div>-->
+<!--            </div>-->
+<!--        </div>-->
 
 
 
-    </div>
-</div>
+<!--    </div>-->
+<!--</div>-->
 <style>
     .partner-slider {
         overflow: hidden;
@@ -522,6 +522,4 @@
         }
     }
 </style>
-
-
 @endsection
