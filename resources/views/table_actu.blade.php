@@ -71,12 +71,12 @@
                             <td>{{ \Carbon\Carbon::parse($actu->date_actu)->format('d M Y') }}</td>
                             <td>{{ Str::limit($actu->description_actu, 50) }}</td>
                             <td><a href="{{ $actu->lien_actu }}" target="_blank">Voir</a></td>
-                            <td>
-                                <a href="{{ route('editx', $actu->id) }}" class="btn btn-sm btn-warning">Modifier</a>
+                            <td class="d-flex me-2">
+                                <a href="{{ route('editx', $actu->id) }}" class="btn btn-sm btn-warning me-2"><i class="bi bi-pencil-square"></i></a>
                                 <form action="{{ route('destroyx', $actu->id) }}" method="POST" class="d-inline" onsubmit="return confirm('Supprimer ?')">
                                     @csrf
                                     @method('DELETE')
-                                    <button class="btn btn-sm btn-danger">Supprimer</button>
+                                    <button class="btn btn-sm btn-danger"><i class="bi bi-trash"></i></button>
                                 </form>
                             </td>
                         </tr>

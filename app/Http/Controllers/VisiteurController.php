@@ -11,19 +11,19 @@ class VisiteurController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function visiteur()
-    {
-       
-        $today = Visiteur::whereDate('created_at', Carbon::today())->count();
+   public function visiteur()
+{
+    $today = Visiteur::whereDate('created_at', Carbon::today())->count();
 
-        $month = Visiteur::whereMonth('created_at', Carbon::now()->month)
-            ->whereYear('created_at', Carbon::now()->year)
-            ->count();
+    $month = Visiteur::whereMonth('created_at', Carbon::now()->month)
+        ->whereYear('created_at', Carbon::now()->year)
+        ->count();
 
-        $year = Visiteur::whereYear('created_at', Carbon::now()->year)->count();
+    $year = Visiteur::whereYear('created_at', Carbon::now()->year)->count();
 
-        return view('home', compact('today', 'month', 'year'));
-    }
+    return view('home', compact('today', 'month', 'year'));
+}
+
 
     /**
      * Show the form for creating a new resource.

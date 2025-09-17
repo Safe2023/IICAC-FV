@@ -19,32 +19,34 @@
             <h4>Ajouter un plat</h4>
           </div>
           <div class="card-body">
-            @if(session('success'))
-            <div class="alert alert-success">{{ session('success') }}</div>
-            @endif
-            <form action="{{ route('ajout_resto') }}" method="POST" enctype="multipart/form-data">
-              @csrf
+    @if(session('success'))
+        <div class="alert alert-success">{{ session('success') }}</div>
+    @endif
 
-              <div class="mb-3">
-                <label for="nom" class="form-label">Nom du plat</label>
-                <input type="text" name="nom" id="nom" class="form-control">
-              </div>
+    <form action="{{ route('ajout_resto') }}" method="POST" enctype="multipart/form-data">
+        @csrf
 
-              <div class="mb-3">
-                <label for="prix" class="form-label">Prix (FCFA)</label>
-                <input type="number" name="prix" id="prix" class="form-control">
-              </div>
+        <div class="mb-3">
+            <label for="nom" class="form-label">Nom du plat</label>
+            <input type="text" name="nom" id="nom" class="form-control" required>
+        </div> 
 
-              <div class="mb-3">
-                <label for="image" class="form-label">Image du plat</label>
-                <input type="file" name="image" id="image" class="form-control">
-              </div>
+        <div class="mb-3">
+            <label for="prix" class="form-label">Prix (FCFA)</label>
+            <input type="text" name="prix" id="prix" class="form-control" required>
+        </div> 
 
-              <div class="d-flex justify-content-between">
-                <button type="submit" class="btn btn-danger">Ajouter</button>
-              </div>
-            </form>
-          </div>
+        <div class="mb-3">
+            <label for="image" class="form-label">Image du plat</label>
+            <input type="file" name="image" class="form-control" accept="image/*">
+        </div>
+
+        <div class="d-flex justify-content-between">
+            <button type="submit" class="btn btn-danger">Ajouter</button>
+        </div>
+    </form>
+</div>
+
         </div>
       </div>
       <div class="col-md-3"></div>

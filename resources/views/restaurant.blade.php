@@ -109,7 +109,7 @@
      @foreach ($plats as $plat)
      <div class="col-md-6 col-lg-3">
        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden card-hover">
-         <img src="{{ asset('storage/' . $plat->image) }}" class="card-img-top" alt="{{ $plat->nom }}" style="height: 250px; object-fit: cover;">
+         <img src="{{ asset('storage/' . $plat->image) }}" class="card-img-top" style="height: 250px; object-fit: cover;">
          <div class="card-body text-center">
            <h5 class="card-title fw-bold">{{ $plat->nom }}</h5>
            <p class="text-danger fw-semibold mb-3">{{($plat->prix) }} FCFA</p>

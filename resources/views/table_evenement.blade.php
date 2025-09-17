@@ -179,7 +179,7 @@
                         <td>{{ \Illuminate\Support\Str::limit($table_evenement->petite_description, 50) }}</td>
                         <td>{{ \Illuminate\Support\Str::limit($table_evenement->description_complete) }}</td>
                         <td class="d-flex m-2">
-                            <a href="{{ route('editees', $table_evenement->id) }}" class="btn btn-sm btn-warning mb-1"> <i class="bi bi-pencil-square"></i></a>
+                            <a href="{{ route('editees', $table_evenement->id) }}" class="btn btn-sm btn-warning me-2"> <i class="bi bi-pencil-square"></i></a>
 
                             <form action="{{ route('delete_event', $table_evenement->id) }}" method="POST" class="d-inline" onsubmit="return confirm('Confirmer la suppression ?')">
                                 @csrf

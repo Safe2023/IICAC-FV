@@ -12,8 +12,8 @@ class RestaurantController extends Controller
      */
     public function restaurant()
     {
-        $plats = Restaurant::latest()->paginate(8); 
-    return view('restaurant', compact('plats'));
+        $plats = Restaurant::latest()->paginate(8);
+        return view('restaurant', compact('plats'));
     }
 
     /**
@@ -27,24 +27,25 @@ class RestaurantController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function creations(Request $request)
+   public function creations(Request $request)
 {
-    $request->validate([
-        'nom' => 'required|string|max:255',
-        'prix' => 'required|numeric',
+    $validated = $request->validate([
+        'nom'   => 'required|string|max:255',
+        'prix'  => 'required|string|max:255',
         'image' => 'required|image|mimes:jpeg,webp,png,jpg|max:2048',
     ]);
 
-    $imagePath = $request->file('image')->store('restos', 'public');
+    // Enregistrer l'image
+    if ($request->hasFile('image')) {
+        $validated['image'] = $request->file('image')->store('restos', 'public');
+    }
 
-    Restaurant::create([
-        'image' => $imagePath,
-        'nom' => $request->nom,
-        'prix' => $request->prix,
-    ]);
+    // Insérer en base
+    Restaurant::create($validated);
 
     return redirect()->back()->with('success', 'Plat ajouté avec succès');
 }
+
 
 
 
@@ -69,25 +70,25 @@ class RestaurantController extends Controller
     /**
      * Update the specified resource in storage.
      */
-   public function update_resto(Request $request, string $id)
-{
-    $plat = Restaurant::findOrFail($id);
+    public function update_resto(Request $request, string $id)
+    {
+        $plat = Restaurant::findOrFail($id);
 
-    $data = $request->validate([
-        'nom' => 'required|string|max:255',
-        'prix' => 'required|numeric',
-        'image' => 'nullable|image|mimes:jpeg,png,jpg,webp|max:2048',
-    ]);
+        $data = $request->validate([
+            'nom' => 'required|string|max:255',
+            'prix' => 'required|numeric',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,webp|max:2048',
+        ]);
 
-    if ($request->hasFile('image')) {
-        $imagePath = $request->file('image')->store('restos', 'public');
-        $data['image'] = $imagePath;
+        if ($request->hasFile('image')) {
+            $imagePath = $request->file('image')->store('restos', 'public');
+            $data['image'] = $imagePath;
+        }
+
+        $plat->update($data);
+
+        return redirect()->route('table_resto')->with('success', 'Plat mis à jour');
     }
-
-    $plat->update($data);
-
-    return redirect()->route('table_resto')->with('success', 'Plat mis à jour');
-}
 
 
     /**

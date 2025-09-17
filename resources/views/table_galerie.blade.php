@@ -121,7 +121,7 @@
                         <td>{{ \Illuminate\Support\Str::limit($table_galeries->description_court, 50) }}</td>
 
                         <td class="d-flex m-2">
-                            <a href="{{ route('edites', $table_galeries->id) }}" class="btn btn-sm btn-warning mb-1"> <i class="bi bi-pencil-square"></i></a>
+                            <a href="{{ route('edites', $table_galeries->id) }}" class="btn btn-sm btn-warning me-2"> <i class="bi bi-pencil-square"></i></a>
 
                             <form action="{{ route('suprimer', $table_galeries->id) }}" method="POST" class="d-inline" onsubmit="return confirm('Confirmer la suppression ?')">
                                 @csrf

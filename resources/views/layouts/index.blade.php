@@ -81,7 +81,6 @@
 
     .gallery-img-container {
         height: 250px;
-        /* fixe la hauteur pour toutes les images */
         overflow: hidden;
         border-radius: 5px 5px 0 0;
     }
@@ -273,8 +272,7 @@
             <a href="/" class="navbar-brand p-0 d-flex align-items-center gap-2 flex-wrap flex-sm-nowrap">
                 <img src="/img/logo_iicacfv.png" class="logo-img" alt="Logo 1">
                 <img src="/img/evas_logo.jpg" class="logo-img" alt="Logo 2">
-            </a>
-
+            </a> 
             <!-- Bouton menu mobile -->
             <button class="navbar-toggler d-lg-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
                 <span class="fa fa-bars fa-lg"></span>
