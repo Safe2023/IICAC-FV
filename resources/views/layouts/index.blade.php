@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    
+    <link rel="icon" type="image/png" href="/img/logo_iicacfv.png">
+
 
     <!-- Libraries Stylesheet -->
     <link href="{{ asset('lib/animate/animate.min.css') }}" rel="stylesheet">
@@ -61,7 +64,7 @@
 
     /*   .bg-light {
         background-color: #fffbe6 !important;
-
+        
     }
  */
     ul li::marker {
@@ -81,6 +84,7 @@
 
     .gallery-img-container {
         height: 250px;
+        /* fixe la hauteur pour toutes les images */
         overflow: hidden;
         border-radius: 5px 5px 0 0;
     }
@@ -248,7 +252,7 @@
                 <div class="d-flex flex-wrap">
                     <a href="https://maps.app.goo.gl/vxio3rNB2HW5P4qSA" class="text-light me-4"><i class="fas fa-map-marker-alt text-primary me-2 sqdxqs"></i>Localisation</a>
                     <a href="https://wa.me/2290192161743?text=Bonjour%2C%20je%20souhaite%20avoir%20plus%20d'informations" class="text-light me-4"><i class="fas fa-phone-alt text-primary me-2 sqdxqs"></i>+229 01 92 16 17 43</a>
-                    <a href="mailto:iicacfv@gmail.com?subject=Demande%20d'information&body=Bonjour%2C%20j'aimerais%20avoir%20plus%20d'informations%20sur..." class="text-light me-0"><i class="fas fa-envelope text-primary me-2 sqdxqs"></i>iicacfv@gmail.com</a>
+                    <a href="mailto:contact@iicac.org?subject=Demande%20d'information&body=Bonjour%2C%20j'aimerais%20avoir%20plus%20d'informations%20sur..." class="text-light me-0"><i class="fas fa-envelope text-primary me-2 sqdxqs"></i>contact@iicac.org</a>
                     <div class="col-md-2 text-end">
                     </div>
                 </div>
@@ -272,7 +276,8 @@
             <a href="/" class="navbar-brand p-0 d-flex align-items-center gap-2 flex-wrap flex-sm-nowrap">
                 <img src="/img/logo_iicacfv.png" class="logo-img" alt="Logo 1">
                 <img src="/img/evas_logo.jpg" class="logo-img" alt="Logo 2">
-            </a> 
+            </a>
+
             <!-- Bouton menu mobile -->
             <button class="navbar-toggler d-lg-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
                 <span class="fa fa-bars fa-lg"></span>
@@ -298,8 +303,9 @@
                             </li>
                             @endforeach
                         </ul>
+
+
                     </li>
-                    <li class="nav-item"><a class="nav-link fw-bold" href="/festaka" style="color:#F26522;">FESTAKA 2026</a></li>
                     <li class="nav-item"><a class="nav-link" href="/contact">Contactez-nous</a></li>
                 </ul>
                 <a href="/restaurant" class="btn btn-primary rounded-pill text-white py-2 px-4 ms-3">
@@ -334,11 +340,10 @@
                                 @endforeach
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link fw-bold" href="/festaka" style="color:#F26522;">FESTAKA 2026</a></li>
                         <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
                     </ul>
                     <a href="/restaurant" class="btn btn-primary w-100 rounded-pill text-white py-2 mt-3">Service de Restauration</a>
-                    
+
                     <div class="col-lg-4 text-center text-lg-end" style=" position: absolute; bottom: 0;">
                         <div class="d-flex align-items-center  " style="justify-content: space-around;">
                             <i class="fas fa-share fa-2x text-white me-2"></i>
@@ -393,7 +398,7 @@
                         <div class="footer-item d-flex flex-column">
                             <h4 class="mb-4 text-white">Contact</h4>
                             <a href="https://maps.app.goo.gl/vxio3rNB2HW5P4qSA" target="_blank"><i class="fa fa-map-marker-alt me-2"></i>Carrefour Aitchédji vers marché togba, Ab-calavi, Benin</a>
-                            <a href="mailto:iicacfv@gmail.com?subject=Demande%20d'information&body=Bonjour%2C%20j'aimerais%20avoir%20plus%20d'informations%20sur..."><i class="fas fa-envelope me-2"></i>iicacfv@gmail.com</a>
+                            <a href="mailto:contact@iicac.org?subject=Demande%20d'information&body=Bonjour%2C%20j'aimerais%20avoir%20plus%20d'informations%20sur..."><i class="fas fa-envelope me-2"></i>contact@iicac.org</a>
                             <a href="https://wa.me/2290192161743?text=Bonjour%2C%20je%20souhaite%20avoir%20plus%20d'informations"><i class="fas fa-phone me-2"></i> +229 01 92 16 17 43</a>
                         </div>
                     </div>

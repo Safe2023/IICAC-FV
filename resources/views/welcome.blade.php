@@ -366,61 +366,8 @@
         </div>
     </div>
 </div>
-<!-- //////////equipe///// -->
-<div class="container pt-5">
-    <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class=" sub-style d-inline-block">
-            <h4 class="sub-title mb-0" style="color: #E94F37;font-size: 17px;">Notre Équipe</h4>
-        </div>
-        <h1 class="text-dark mt-3">Des passionnés à votre service</h1>
-        <p class="">Découvrez les visages qui font vivre notre institution artistique et culturelle.</p>
-    </div>
-
-   <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        @foreach($equipe->chunk(3) as $chunkIndex => $chunk)
-            <div class="carousel-item {{ $chunkIndex == 0 ? 'active' : '' }}">
-                <div class="row justify-content-center g-4">
-                    @foreach($chunk as $equipe)
-                        <div class="col-md-4">
-                            <div class="card text-center border-0 shadow team-card h-100 rounded-4 overflow-hidden" style="transition: transform 0.3s;">
-                                <img src="{{ asset('storage/' . $equipe->photo_equipe) }}" class="card-img-top" style="height: 280px; object-fit: cover;" alt="{{ $equipe->nom_equipe }}">
-                                <div class="card-body bg-light" style="background-color: #f8f9fa;">
-                                    <h5 class="fw-bold mb-1">{{ $equipe->nom_equipe }}</h5>
-                                    <p class="text-muted mb-3">{{ $equipe->poste_equipe }}</p>
-                                    <div class="d-flex justify-content-center gap-3">
-                                        @if($equipe->lien_facebook)
-                                            <a href="{{ $equipe->lien_facebook }}" class="text-danger"><i class="fab fa-facebook-f"></i></a>
-                                        @endif
-                                        @if($equipe->lien_instagram)
-                                            <a href="{{ $equipe->lien_instagram }}" class="text-danger"><i class="fab fa-instagram"></i></a>
-                                        @endif
-                                        @if($equipe->lien_linkedin)
-                                            <a href="{{ $equipe->lien_linkedin }}" class="text-danger"><i class="fab fa-linkedin-in"></i></a>
-                                        @endif
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
-                </div>
-            </div>
-        @endforeach
-    </div>
-
-    <!-- Contrôles -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
-        <span class="visually-hidden">Précédent</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#teamCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
-        <span class="visually-hidden">Suivant</span>
-    </button>
-</div>
 
 
-</div>
 
 
 <!-- Effet hover -->
@@ -522,4 +469,6 @@
         }
     }
 </style>
+
+
 @endsection

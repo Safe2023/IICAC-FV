@@ -32,26 +32,26 @@
          </div>
          <div class="row g-4">
              @foreach ($actualite as $actu)
-             <div class="col-md-6 col-lg-4 mb-4 wow fadeInUp" data-wow-delay="0.1s">
-                 <div class="card h-100 border-0 shadow-sm">
-                     <div style="height: 250px; overflow: hidden;">
-                         <img src="{{ asset('storage/' . $actu->image_actu) }}" class="w-100 h-100" style="object-fit: cover;" alt="Image actualité">
-                     </div>
-                     <div class="card-body d-flex flex-column justify-content-between" style="background-color: #f9f9f9;">
-                         <div>
-                             <small class="text-muted">
-                                 <i class="far fa-calendar-alt me-2"></i>
-                                 {{ \Carbon\Carbon::parse($actu->date_actu)->format('d M Y') }}
-                             </small>
-                             <h5 class="mt-2 mb-3" style="color: #2C3E50;">{{ $actu->titre_actu }}</h5>
-                             <p class="mb-3">{{ Str::limit($actu->description_actu, 50) }}</p>
-                         </div>
-                         <a href="{{ $actu->lien_actu }}" class="fw-bold mt-auto" style="color: #E94F37;">
-                             Lire l'article <i class="fas fa-arrow-right ms-2"></i>
-                         </a>
-                     </div>
-                 </div>
-             </div>
+            <div class="col-md-6 col-lg-4 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="card h-100 border-0 shadow-sm">
+        <div style="height: 250px; overflow: hidden;">
+            <img src="{{ asset('storage/' . $actu->image_actu) }}" class="w-100 h-100" style="object-fit: cover;" alt="Image actualité">
+        </div>
+        <div class="card-body d-flex flex-column justify-content-between" style="background-color: #f9f9f9;">
+            <div>
+                <small class="text-muted">
+                    <i class="far fa-calendar-alt me-2"></i>
+                    {{ \Carbon\Carbon::parse($actu->date_actu)->format('d M Y') }}
+                </small>
+                <h5 class="mt-2 mb-3" style="color: #2C3E50;">{{ $actu->titre_actu }}</h5>
+                <p class="mb-3">{{ Str::limit($actu->description_actu, 50) }}</p>
+            </div>
+            <a href="{{ $actu->lien_actu }}" class="fw-bold mt-auto" style="color: #E94F37;">
+                Lire l'article <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+        </div>
+    </div>
+</div>
 
              @endforeach
 

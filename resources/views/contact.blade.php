@@ -134,7 +134,7 @@
                                  <i class="fa fa-envelope-open fa-2x"></i>
                              </div>
                              <h4 class="text-dark">Email</h4>
-                             <p class="mb-0">iicacfv@gmail.com</p>
+                             <p class="mb-0">contact@iicac.org</p>
                          </div>
                      </div>
                  </div>

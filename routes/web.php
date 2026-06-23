@@ -46,6 +46,7 @@ Route::get('festaka', function () {
 })->name('festaka');
 
 
+
 Route::get('categorie', [ServiceController::class, 'create']);
 Route::post('categorie', [ServiceController::class, 'store'])->name('categorie');
 Route::get('/update_categorie/{id}', [ServiceController::class, 'edit'])->name('edit');

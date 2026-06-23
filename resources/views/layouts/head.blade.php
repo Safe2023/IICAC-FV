@@ -2,8 +2,6 @@
 <html lang="en">
 
 
-<!-- Mirrored from themesbrand.com/skote/layouts/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jun 2022 14:23:19 GMT -->
-
 <head>
 
     <meta charset="utf-8" />
@@ -189,15 +187,15 @@
                                 <li><a href="/table_resto" key="t-create-new">Table restaurant</a></li>
                             </ul>
                         </li>
-                         <li>
-                            <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <i class="bx bx-briefcase-alt-2"></i>
-                                <span key="t-projects">Equipes</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="/table_equipe" key="t-create-new">Table equipe</a></li>
-                            </ul>
-                        </li>
+                        <!-- <li>-->
+                        <!--    <a href="javascript: void(0);" class="has-arrow waves-effect">-->
+                        <!--        <i class="bx bx-briefcase-alt-2"></i>-->
+                        <!--        <span key="t-projects">Equipes</span>-->
+                        <!--    </a>-->
+                        <!--    <ul class="sub-menu" aria-expanded="false">-->
+                        <!--        <li><a href="/table_equipe" key="t-create-new">Table equipe</a></li>-->
+                        <!--    </ul>-->
+                        <!--</li>-->
 
                     </ul>
                 </div>
