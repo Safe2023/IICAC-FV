@@ -306,6 +306,7 @@
 
 
                     </li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="/festaka" style="color:#F26522;">FESTAKA 2026</a></li>
                     <li class="nav-item"><a class="nav-link" href="/contact">Contactez-nous</a></li>
                 </ul>
                 <a href="/restaurant" class="btn btn-primary rounded-pill text-white py-2 px-4 ms-3">
@@ -340,6 +341,7 @@
                                 @endforeach
                             </ul>
                         </li>
+                        <li class="nav-item"><a class="nav-link fw-bold" href="/festaka" style="color:#F26522;">FESTAKA 2026</a></li>
                         <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
                     </ul>
                     <a href="/restaurant" class="btn btn-primary w-100 rounded-pill text-white py-2 mt-3">Service de Restauration</a>
