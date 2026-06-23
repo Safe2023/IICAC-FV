@@ -41,6 +41,9 @@ Route::get('service', function () {
 Route::get('restaurant', function () {
     return view('restaurant');
 });
+Route::get('festaka', function () {
+    return view('festaka');
+})->name('festaka');
 
 
 Route::get('categorie', [ServiceController::class, 'create']);
